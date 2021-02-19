@@ -1,0 +1,352 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Teko', sans-serif;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+header .menu {
+    display: flex;
+    list-style: none;
+    width: 400px;
+}
+
+header .menu li {
+    margin: .25rem;
+    padding: .25rem;
+    width: 25%;
+    text-align: center;
+
+}
+
+header .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+header .menu li a:hover {
+    color: #fd7581;
+    font-weight: 500;
+}
+
+.menu li a.active {
+    color: #ff4655;
+    font-weight: 500;
+}
+
+
+/*comienza hero*/
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .hero__video {
+
+    filter: brightness(0.5);
+    position: absolute;
+    z-index: 1;
+}
+
+#hero .hero__title {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+#hero .hero__title h1 {
+    font-size: 6rem;
+    color: #fff;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+#hero .hero__title a {
+    background-color: #ff4655;
+    padding: 1rem;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#hero .hero__title h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+#hero .hero__button {
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .hero__button:hover .button__overlay {
+    right: 0%;
+    transform: skewX(0deg);
+    opacity: 1;
+}
+
+#hero .hero__button:hover h2 {
+    color: #000;
+    z-index: 3;
+    font-weight: 700;
+}
+
+#hero .button__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    top: 0;
+    right: 100%;
+    opacity: 0;
+    transform: skewX(-15deg);
+    transition: 0.2s all ease-in-out;
+}
+
+/*termina hero*/
+
+
+
+/*comienza agentes*/
+
+#agente {
+    position: relative;
+    background-color: #ece8e1;
+    display: grid;
+    grid-template-columns: 1fr .8fr 1.5fr 1fr 1fr;
+    grid-template-rows: .3fr 1fr .2fr;
+}
+
+.agente__lista,
+.agente__retrato,
+.agente__bio {
+    grid-row-start: 2;
+}
+
+
+#agente .agente__background {
+    width: 100%;
+    height: 60%;
+    background: #ff4655;
+    background-image: url(../img/agents-background_d.jpg);
+    margin: 7% 0% 10% 0%;
+    transform: skewy(-2deg);
+    position: absolute;
+    z-index: 1;
+}
+
+#agente .agente__lista {
+    grid-column-start: 2;
+    position: relative;
+    z-index: 2;
+}
+
+#agente .agente__lista li {
+    list-style: none;
+}
+
+#agente .agente__lista a {
+    font-size: 5rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Teko',
+        sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+#agente .agente__retrato {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    max-height: 700px;
+    grid-column-start: 3;
+}
+
+#agente .agente__img {
+    max-height: 100%;
+}
+
+.agente__img.sage,
+.agente__img.raze,
+.agente__img.omen,
+.agente__img.killjoy {
+    display: none;
+}
+
+/*
+.agente__sage:hover,
+.agente__omen:hover,
+.agente__raze:hover,
+.agente__killjoy:hover~#img_main {
+    display: none;
+}*/
+
+#agente .agente__bio {
+    position: relative;
+    z-index: 2;
+    grid-column-start: 4;
+    font-family: 'Sarpanch',
+        sans-serif;
+}
+
+#agente .rol {
+    font-family: 'teko',
+        sans-serif;
+}
+
+#agente .rol_main {
+    font-size: 3rem;
+}
+
+#agente .bio_title {
+    font-family: 'teko',
+        sans-serif;
+    margin: 1rem 0px .5rem 0px;
+}
+
+#agente .bio_texto {
+    font-family: 'teko',
+        sans-serif;
+    font-size: 1.5rem;
+}
+
+/*termina agentes*/
+
+
+
+/*comienza armas*/
+
+#armas {
+    background-color: #ece8e1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#armas .armas__galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-auto-rows: min-content;
+    grid-auto-flow: dense;
+    max-width: 1300px;
+}
+
+#armas .armas__head h2 {
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+#armas .armas__modulo {
+    display: flex;
+    flex-flow: column wrap;
+    border: 1px solid #dbd6ce;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+#armas .armas__modulo:hover .modulo__overlay {
+    right: 0%;
+    transform: skewX(0deg);
+    opacity: 1;
+}
+
+#armas .armas__modulo:hover .armas__img {
+    scale: 95%;
+    opacity: .8;
+}
+
+#armas .armas__modulo:hover h3 {
+    color: #ece8e1;
+    z-index: 3;
+}
+
+#armas .armas__modulo:hover h4 {
+    visibility: hidden;
+}
+
+
+
+#armas .armas__modulo h3 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'sarpanch', sans-serif;
+    position: relative;
+}
+
+#armas .armas__modulo h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+#armas .modulo__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: #ff4656;
+    top: 0;
+    right: 100%;
+    opacity: 0;
+    transform: skewX(-15deg);
+    transition: 0.2s all ease-in-out;
+}
+
+
+#armas .armas__img {
+    width: 80%;
+    filter: drop-shadow(1.5rem 2.2rem 0 rgba(15, 25, 35, .17));
+    margin: 1rem 0rem 2rem 0rem;
+    transition: 0.2s all ease-in-out;
+}
+
+
+/*termina hero*/

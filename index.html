@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><svg fill="none" height="35" viewBox="0 0 100 100" width="35"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z"
+                    fill="#fff"></path>
+            </svg></div>
+        <ul class="menu">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#agente">Agente</a></li>
+            <li><a href="#armas">Armas</a></li>
+            <li><a href="noticias#">Noticias</a></li>
+        </ul>
+    </header>
+
+    <!-- comienza hero -->
+
+    <section id="hero" class="hero">
+
+        <video class="hero__video" src="img/background.mp4" autoplay height="100%"></video>
+
+        <div class="hero__title">
+            <img src="img/logo.png" alt="" style="filter: invert(100%); margin: 3rem;">
+            <a href="modal_jugar" class="hero__button">
+                <div class="button__overlay"></div>
+                <h2>Juegalo ya</h2>
+            </a>
+        </div>
+    </section>
+
+    <!-- termina hero -->
+
+
+    <!-- comienza agentes -->
+
+    <section id="agente" class="agente">
+        <div class="agente__background"></div>
+        <article class="agente__lista">
+            <ul>
+                <li class="agente__sage"><a href="">Sage</a></li>
+                <li class="agente__omen"><a href="">Omen</a></li>
+                <li class="agente__killjoy"><a href="">killjoy</a></li>
+                <li class="agente__raze"><a href="">Raze</a></li>
+
+            </ul>
+        </article>
+        <article class="agente__retrato">
+            <img id="img_main" src="img/personajes.png" alt="personajes" class="agente__img main">
+            <img src="img/sage.png" alt="Sage" class="agente__img sage">
+            <img src="img/omen.png" alt="Omen" class="agente__img omen">
+            <img src="img/raze.png" alt="Raze" class="agente__img raze">
+            <img src="img/killjoy.png" alt="Killjoy" class="agente__img killjoy">
+        </article>
+        <article class="agente__bio">
+            <div class="agente__bio_info sage">
+                <h3 class="rol">// ROL</h3>
+                <h2 class="rol_main">CENTINELA</h2>
+                <h3 class="bio_title">// BIOGRAFÍA</h3>
+                <p class="bio_texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iure quisquam ipsam
+                    nisi obcaecati asperiores soluta sapiente nemo et, velit a dignissimos animi fugiat optio quos
+                    veritatis laboriosam iste! Esse soluta temporibus aliquid cupiditate, in voluptates asperiores
+                    assumenda maiores iure.</p>
+            </div>
+            <!--  <div class="agente__bio_info">
+                <h3 class="rol"></h3>
+                <h2 class="rol_main"></h2>
+                <h3 class="bio_title"></h3>
+                <p class="bio_texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iure quisquam
+                    ipsam
+                    nisi obcaecati asperiores soluta sapiente nemo et, velit a dignissimos animi fugiat optio quos
+                    veritatis laboriosam iste! Esse soluta temporibus aliquid cupiditate, in voluptates asperiores
+                    assumenda maiores iure.</p>
+            </div>
+            <div class="agente__bio_info">
+                <h3 class="rol"></h3>
+                <h2 class="rol_main"></h2>
+                <h3 class="bio_title"></h3>
+                <p class="bio_texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iure quisquam
+                    ipsam
+                    nisi obcaecati asperiores soluta sapiente nemo et, velit a dignissimos animi fugiat optio quos
+                    veritatis laboriosam iste! Esse soluta temporibus aliquid cupiditate, in voluptates asperiores
+                    assumenda maiores iure.</p>
+            </div>
+            <div class="agente__bio_info">
+                <h3 class="rol"></h3>
+                <h2 class="rol_main"></h2>
+                <h3 class="bio_title"></h3>
+                <p class="bio_texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto iure quisquam
+                    ipsam
+                    nisi obcaecati asperiores soluta sapiente nemo et, velit a dignissimos animi fugiat optio quos
+                    veritatis laboriosam iste! Esse soluta temporibus aliquid cupiditate, in voluptates asperiores
+                    assumenda maiores iure.</p>
+            </div>-->
+        </article>
+    </section>
+
+    <!-- termina agentes -->
+
+
+    <!-- comienza armas -->
+
+    <section id="armas" class="armas">
+        <article class="armas__head">
+            <h2 class="head_title">Elige tu arma</h2>
+        </article>
+
+        <article class="armas__galeria">
+            <div class="armas__modulo">
+                <div class="modulo__overlay"></div>
+                <h3 class="modulo_title">Classic.</h3>
+                <img src="img/classic.png" alt="" class="armas__img">
+                <h4 class="modulo_descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nam.</h4>
+            </div>
+            <div class="armas__modulo">
+                <h3 class="modulo_title">Cuchillo.</h3>
+                <img src="img/cuchillo.png" alt="" class="armas__img">
+                <h4 class="modulo_descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nam.</h4>
+                <div class="modulo__overlay"></div>
+            </div>
+            <div class="armas__modulo">
+                <h3 class="modulo_title">Bucky.</h3>
+                <img src="img/bucky.png" alt="" class="armas__img">
+                <h4 class="modulo_descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nam.</h4>
+                <div class="modulo__overlay"></div>
+            </div>
+            <div class="armas__modulo">
+                <h3 class="modulo_title">Phantom.</h3>
+                <img src="img/phantom.png" alt="" class="armas__img">
+                <h4 class="modulo_descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nam.</h4>
+                <div class="modulo__overlay"></div>
+            </div>
+            <div class="armas__modulo">
+                <h3 class="modulo_title">Operator.</h3>
+                <img src="img/operator.png" alt="" class="armas__img">
+                <h4 class="modulo_descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nam.</h4>
+                <div class="modulo__overlay"></div>
+            </div>
+            <div class="armas__modulo">
+                <h3 class="modulo_title">Spectre.</h3>
+                <img src="img/spectre.png" alt="" class="armas__img">
+                <h4 class="modulo_descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nam.</h4>
+                <div class="modulo__overlay"></div>
+            </div>
+        </article>
+    </section>
+
+    <!-- termina hero -->
+
+    <footer></footer>
+</body>
+
+</html>
